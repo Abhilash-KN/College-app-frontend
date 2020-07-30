@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 2px;
+	height: 40%;
+}
+
+::-webkit-scrollbar-track {
+	background: grey;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #4d4545;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #ffffff;
+}
+
+::-webkit-scrollbar-track-piece:end {
+	margin-bottom: 20%;
+}
+
+::-webkit-scrollbar-track-piece:start {
+	margin-top: 20%;
+}

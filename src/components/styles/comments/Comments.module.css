@@ -1,0 +1,70 @@
+.container {
+	background: rgba(0, 0, 0, 0.04);
+	padding: 16px;
+}
+
+.commentBox {
+	display: flex;
+	flex-direction: row;
+}
+
+.userIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 4px;
+	width: 32px;
+	height: 32px;
+	min-width: 32px;
+	min-height: 32px;
+	font-size: 1.4em;
+}
+
+.body {
+	box-sizing: border-box;
+	flex-grow: 1;
+	margin: 4px;
+	border-radius: 4px;
+	padding: 4px;
+	background: rgba(122, 89, 89, 0.08);
+}
+
+.author {
+	font-size: 0.8em;
+}
+
+.date {
+	font-size: 0.5em;
+	margin-bottom: 4px;
+}
+
+.content {
+	font-size: 0.8em;
+	text-align: justify;
+}
+
+.hr {
+	margin: 16px;
+}
+
+.textarea {
+	height: 120px;
+	width: 100%;
+	resize: none;
+	border: none;
+	outline: none;
+	white-space: pre-line;
+	padding: 24px 24px 48px 24px;
+}
+
+.button {
+	color: white;
+	border: none;
+	outline: none;
+	background: #1283f6;
+	margin: 32px;
+	width: 100px;
+	height: 38px;
+	border-radius: 2px;
+	text-align: center;
+}

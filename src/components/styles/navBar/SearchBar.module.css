@@ -1,0 +1,106 @@
+.searchBarOpen,
+.searchBarClose {
+	position: absolute;
+	width: 100%;
+	height: 56px;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(255, 255, 255);
+	transition: 0.4s;
+}
+
+.searchBarClose {
+	left: 100%;
+}
+
+.back {
+	width: 56px;
+	height: 56px;
+	color: #1283f6;
+	font-size: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.back:active {
+	transform: scale(0.8);
+}
+
+.input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.inputField {
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 50%;
+	padding: 6px;
+	margin: auto 24px;
+	border-bottom: 1px solid #1283f6;
+}
+
+.search {
+	width: 56px;
+	height: 100%;
+	color: #1283f6;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.searchResults {
+	position: fixed;
+	top: 56px;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	transition: transform 0.4s;
+	z-index: -1;
+}
+
+.inputField:focus ~ .searchResults {
+	display: flex;
+}
+
+@media only screen and (min-width: 1024px) {
+	.searchBarOpen,
+	.searchBarClose {
+		height: 36px;
+		width: 24%;
+		left: 16%;
+		margin-top: 16px;
+		border-radius: 22px;
+		transform: none;
+	}
+	.searchResults {
+		width: 24%;
+		top: 68px;
+		height: 40vh;
+		left: 16%;
+		display: none;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.inputField {
+		margin-right: 0;
+		height: 24px;
+	}
+	.inputField:focus ~ .searchResults {
+		display: flex;
+	}
+	.back {
+		display: none;
+	}
+}

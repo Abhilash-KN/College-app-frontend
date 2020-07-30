@@ -1,0 +1,30 @@
+.description {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid black;
+	border-radius: 4px;
+	height: 120px;
+}
+
+.text {
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	resize: none;
+	white-space: pre-line;
+}
+.button {
+	margin: 24px;
+	width: 100px;
+	height: 38px;
+	background: #1283f6;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}

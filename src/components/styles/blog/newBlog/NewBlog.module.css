@@ -1,0 +1,85 @@
+.container {
+	position: relative;
+	max-width: 780px;
+	min-width: 200px;
+	width: 100%;
+	margin: 0 auto;
+	color: black;
+	overflow: hidden;
+}
+
+.options {
+	position: fixed;
+	top: 56px;
+	right: 0;
+	left: 0;
+	max-width: 780px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	margin: 0px auto 16px;
+	padding-top: 24px;
+	padding-bottom: 16px;
+	background: white;
+	z-index: 1;
+}
+
+.unselected,
+.selected {
+	width: 40%;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background: #1283f6;
+	color: white;
+	border: none;
+	border-radius: 2px;
+	transition: 0.4s;
+}
+
+.unselected {
+	background: white;
+	color: #1283f6;
+	border: 1px solid #1283f6;
+}
+
+.open,
+.close {
+	position: relative;
+	width: 200%;
+	display: flex;
+	flex-direction: row;
+	transform: none;
+	padding-top: 88px;
+	max-height: 100%;
+	transition: 0.4s;
+}
+
+.close {
+	transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 1024px) {
+	.container,
+	.options {
+		max-width: 1280px;
+	}
+	.options {
+		top: 68px;
+	}
+	.selected,
+	.unselected {
+		width: 28%;
+		background-color: #1283f6;
+		color: white;
+		border: none;
+	}
+
+	.open,
+	.close {
+		width: 100%;
+		transform: none;
+	}
+}

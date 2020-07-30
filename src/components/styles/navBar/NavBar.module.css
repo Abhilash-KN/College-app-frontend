@@ -1,0 +1,33 @@
+.container {
+	position: fixed;
+	width: 100vw;
+	height: 56px;
+	background-color: #1283f6;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 0 2px 12px black;
+}
+
+.name {
+	color: rgb(255, 255, 255);
+	font-size: 2em;
+	font-weight: 800;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	text-shadow: 2px 2px 4px #0054a8;
+}
+
+@media only screen and (min-width: 1024px) {
+	.container {
+		height: 68px;
+	}
+	.name {
+		font-size: 2.4em;
+		height: 68px;
+		width: 16%;
+		flex-grow: 0;
+	}
+}

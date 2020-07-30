@@ -1,0 +1,35 @@
+.container {
+	width: 100%;
+	position: fixed;
+	top: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 8px 2vw;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.message {
+	flex-grow: 1;
+	padding: 4px;
+	margin: auto 40px;
+	overflow-wrap: break-word;
+	text-align: center;
+}
+
+.button {
+	width: 56px;
+	height: 56px;
+	font-size: 1.4em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+	.container {
+		top: 68px;
+	}
+}

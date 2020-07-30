@@ -1,0 +1,101 @@
+.container {
+	position: fixed;
+	top: 56px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 24px;
+	z-index: -1;
+}
+
+.details {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.data {
+	display: flex;
+	flex-direction: column;
+	margin: 16px;
+}
+
+.label {
+	height: 24px;
+}
+
+.field {
+	width: 220px;
+	height: 24px;
+	color: black;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+}
+
+.buttonSave,
+.buttonLogout {
+	width: 120px;
+	height: 38px;
+	color: white;
+	border: none;
+	outline: none;
+	border-radius: 2px;
+	margin: 16px auto;
+	font-size: 0.9em;
+	transition: 0.4s;
+}
+
+.buttonContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.buttonSave {
+	background-color: #1283f6;
+	transition: 0.2s;
+}
+
+.buttonLogout {
+	display: flex;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(231, 78, 50);
+	transition: 0.2s;
+}
+
+.buttonLogout:hover {
+	border: 1px solid rgb(231, 78, 50);
+	color: rgb(231, 78, 50);
+	background-color: white;
+}
+
+.buttonSave:hover {
+	border: 1px solid #1283f6;
+	color: #1283f6;
+	background-color: white;
+}
+
+@media only screen and (min-width: 1024px) {
+	.container {
+		top: 68px;
+	}
+}
+
+@media only screen and (min-width: 780px) {
+	.data {
+		flex-direction: row;
+	}
+	.label {
+		width: 160px;
+	}
+	.buttonContainer {
+		margin-top: 28px;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}
